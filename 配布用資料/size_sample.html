@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+  <html>
+ 
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+      /*ピクセル*/
+      .px{
+          width: 500px;
+          height: 500px;
+          background-color: rgb(255, 191, 131);
+      }
+      .px-child_01{
+          width: 400px;
+          height: 300px;
+          background-color: rgb(249, 255, 131);
+      }
+      .px-child_02{
+          width: 300px;
+          height: 200px;
+          background-color: rgb(131, 195, 255);
+      }
+      .px-child_03{
+          width: 200px;
+          height: 100px;
+          background-color: rgb(255, 131, 131);
+      }
+
+      /*パーセント*/
+      .perc{
+          width: 500px;
+          height: 500px;
+          background-color: rgb(255, 191, 131);
+      }
+      .perc-child_01{
+          width: 80%;
+          height: 50%;
+          background-color: rgb(249, 255, 131);
+      }
+      .perc-child_02{
+          width: 80%;
+          height: 50%;
+          background-color: rgb(131, 195, 255);
+      }
+      .perc-child_03{
+          width: 80%;
+          height: 50%;
+          background-color: rgb(255, 131, 131);
+      }
+      
+      /*エム*/
+      .em{
+          font-size: 80px;
+      }
+      .em-child_01{
+          font-size:  0.5em;
+      }
+      .em-child_02{
+          font-size:  0.5em;
+      }
+      .em-child_03{
+          font-size:  0.5em;
+      }
+  </style>
+
+  </head>
+ 
+  <body>
+    <h1>サイズサンプルHTML</h1>
+    <section>
+        <h2>ピクセル</h2>
+        <div class="px">
+            <div class="px-child_01">
+                <div class="px-child_02">
+                    <div class="px-child_03"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>パーセント</h2>
+        <div class="perc">
+            <div class="perc-child_01">
+                <div class="perc-child_02">
+                    <div class="perc-child_03"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>エム</h2>
+        <div class="em"> 80px
+            <div class="em-child_01"> 親要素
+                <div class="em-child_02"> 子要素
+                    <div class="em-child_03"> 孫要素</div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+ 
+  </html>
